@@ -1,3 +1,5 @@
+import { Favorites } from "./pages";
+
 export const routesPath = [
 	{
 		path: '/',
@@ -8,7 +10,7 @@ export const routesPath = [
 		element: <div>Users</div>,
 	},
 	{
-		path: '/selected',
-		element: <div>Selected</div>,
+		path: '/favorites',
+		element: <Favorites />,
 	},
 ];

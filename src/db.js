@@ -4,7 +4,7 @@ export const users = [
         "first_name": "Имя",
         "second_name": "Фамилия",
         "experience": 2,
-        "image": "src/assets/img_name.jpg",
+        "image": "src/public/test.jpg",
         "about": "Lorem ipsum dolor sit amet. Mauris convallis tellus urna.",
         "stack": [
             {
@@ -43,7 +43,7 @@ export const users = [
         "first_name": "Максим",
         "second_name": "Володин",
         "experience": 2,
-        "image": "src/assets/img_name.jpg",
+        "image": "https://disk.yandex.ru/d/wFFch36BzgSmeQ/%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC.jpg",
         "about": "Lorem ipsum dolor sit amet. Mauris convallis tellus urna.",
         "stack": [
             {
