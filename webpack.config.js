@@ -1,13 +1,21 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { stat } = require("fs");
+const { dir } = require("console");
 
 module.exports = {
+    entry: {
+        main: path.join(__dirname, "./src/index.js"),
+    },
     output: {
         path: path.join(__dirname, "/build"),
         publicPath: "/",
         filename: "bundle.js",
     },
+    target: ["web", "es5"],
+    stats: { children: true },
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/public/index.html",
@@ -16,10 +24,19 @@ module.exports = {
         }),
         new webpack.ProvidePlugin({
             process: "process/browser",
-        })
+        }),
+        new MiniCssExtractPlugin({
+            filename: "[name].css",
+            chunkFilename: "[id].css",
+        }),
     ],
     devServer: {
         port: 3000,
+        hot: true,
+        static: {
+            directory: path.join(__dirname, "./"),
+            serveIndex: true,
+        }
     },
     module: {
         rules: [
@@ -31,8 +48,17 @@ module.exports = {
                 },
             },
             {
-                test: /\.(sa|sc|c)ss$/,
-                use: ["style-loader", "css-loader", "sass-loader"],
+                test: /\.css$/,
+                use: [
+                    "style-loader",
+                    {
+                        loader: "css-loader",
+                        options: {
+                            modules: true,
+                            importLoaders: 1,
+                        }
+                    },
+                ],
             },
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg)$/,
