@@ -1,0 +1,23 @@
+.wrapper {
+}
+
+.progressDiv {
+	width: 200px;
+	height: 15px;
+	background-color: rgba(136, 136, 136, 0.2);
+	border-radius: 5px;
+}
+
+.progress {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 15px;
+	border-radius: 5px;
+}
+
+.text {
+	font-size: 12px;
+	transform: translateY(-1px);
+}
