@@ -4,6 +4,9 @@ body {
 		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background: url(https://3.downloader.disk.yandex.ru/preview/ba359358130cfe38eabb40064fc9105e6c7a5b7dd46cb10d347751a590a27be8/inf/cwT1tF1Ivwgx-dNpOYl2Y5Im_OwRTUryaeo8JAnCXB1nQ_PBPf0ZOZDbsZQGURKB4X6cODIbKtcDYeFtYMRBbQ%3D%3D?uid=537849441&filename=LightTheme.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=537849441&tknv=v2&size=1896x896)
+		no-repeat center center fixed;
+	background-size: cover;
 }
 
 code {
