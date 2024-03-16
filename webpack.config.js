@@ -1,7 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     entry: {
@@ -22,10 +21,6 @@ module.exports = {
         }),
         new webpack.ProvidePlugin({
             process: "process/browser",
-        }),
-        new MiniCssExtractPlugin({
-            filename: "[name].css",
-            chunkFilename: "[id].css",
         }),
     ],
     devServer: {
