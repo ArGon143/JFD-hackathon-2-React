@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styles from './badge.module.css';
+import styles from './Badge.module.css';
 
 export const Badge = ({ color, fontSize, children }) => {
 	return (

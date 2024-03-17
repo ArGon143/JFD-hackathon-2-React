@@ -56,8 +56,7 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg|jpeg|svg)$/i,
-                loader: "url-loader",
-                options: { limit: false, name: "assets/[contenthash].[ext]" },
+                type: 'asset/resource',
             },
         ],
     },

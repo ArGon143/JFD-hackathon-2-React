@@ -1,5 +1,5 @@
 import { useSelectedUsers } from "../../hooks";
-import { Person, PersonList } from "../../components";
+import { Person, PersonList, H2 } from "../../components";
 import styles from './Favorites.module.css';
 
 export const Favorites = () => {

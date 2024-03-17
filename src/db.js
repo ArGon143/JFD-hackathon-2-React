@@ -1,7 +1,4 @@
-import imageArtem from './assets/artem.jpg'
-import imageMaksim from './assets/maksim.jpg'
-import imageVladimir from './assets/vladimir.jpg'
-import imageSergey from './assets/sergey.jpg'
+import { IMG_URL } from './constants'
 
 export const users = [
     {
@@ -10,7 +7,7 @@ export const users = [
         "second_name": "Гондалев",
         "experience": 2,
         "age": 23,
-        "image": imageArtem,
+        "image": IMG_URL.AVATAR_USER_001,
         "about": "Lorem ipsum dolor sit amet. Mauris convallis tellus urna.",
         "stack": [
             {
@@ -49,7 +46,7 @@ export const users = [
         "second_name": "Володин",
         "experience": 2,
         "age": 23,
-        "image": imageMaksim,
+        "image": IMG_URL.AVATAR_USER_002,
         "about": "Lorem ipsum dolor sit amet. Mauris convallis tellus urna.",
         "stack": [
             {
@@ -88,7 +85,7 @@ export const users = [
         "second_name": "Тарабан",
         "experience": 2,
         "age": 23,
-        "image": imageVladimir,
+        "image": IMG_URL.AVATAR_USER_003,
         "about": "Lorem ipsum dolor sit amet. Mauris convallis tellus urna.",
         "stack": [
             {
@@ -127,7 +124,7 @@ export const users = [
         "second_name": "Комаров",
         "experience": 2,
         "age": 23,
-        "image": imageSergey,
+        "image": IMG_URL.AVATAR_USER_004,
         "about": "Lorem ipsum dolor sit amet. Mauris convallis tellus urna.",
         "stack": [
             {

@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import { routesPath } from './routes';
 import styles from './SiteCard.module.css';
 import withRouterAndProviderApp from './HOC/withRouterProviderApp';
-import { Breadcrumbs, Footer, H2, Header } from './components';
+import { Breadcrumbs, Footer, Header } from './components';
 
 const SiteCard = () => {
 	return (
