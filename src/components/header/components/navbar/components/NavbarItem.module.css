@@ -1,0 +1,12 @@
+.navbarItem {
+	margin-right: 20px;
+	color: rgb(54, 40, 160);
+	text-decoration: none;
+}
+
+.navbarItem:hover {
+	text-decoration: underline;
+}
+.navbarItem:active {
+	color: rgb(154, 4, 4);
+}

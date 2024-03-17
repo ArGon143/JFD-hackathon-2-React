@@ -1,0 +1,9 @@
+.footer {
+	width: 980px;
+	height: 10vh;
+	padding: 20px 10px 0 10px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	font-style: italic;
+}

@@ -1,20 +1,20 @@
 .person {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    background-color: #e6e6e6;
-    border-radius: .4rem;
-    padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	background-color: rgb(255, 254, 254, 0.8);
+	border-radius: 0.4rem;
+	padding: 1rem;
 }
 .text {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 .small {
-    font-weight: 400;
-    color: #7e7e7e;
-    font-size: 1rem;
+	font-weight: 400;
+	color: #7e7e7e;
+	font-size: 1rem;
 }
 .big {
     font-weight: 700;

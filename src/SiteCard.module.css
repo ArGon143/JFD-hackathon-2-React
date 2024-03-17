@@ -1,11 +1,15 @@
 .appColumn {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	max-width: 1200px;
+	width: 1000px;
 	min-height: 100%;
 	margin: 0 auto;
+	color: rgb(54, 40, 160);
 }
 .page {
-	padding: 120px 0 120px;
+	margin-top: 80px;
+	margin-bottom: 20px;
+	padding: 50px 10px;
 }

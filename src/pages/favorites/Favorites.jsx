@@ -4,11 +4,14 @@ import styles from './Favorites.module.css';
 
 export const Favorites = () => {
     const [users, selectUser] = useSelectedUsers([], { onlyUnique: true, favorites: true })
-    return (
-        <PersonList>
-            {users.map((user) => (
-                <Person className={styles.crop} key={user.id} user={user} setFavorite={() => selectUser(user.id)} />    
-            ))}
-        </PersonList>
+	return (
+		<>
+			<H2>Список избранных специалистов</H2>
+			<PersonList>
+				{users.map((user) => (
+					<Person className={styles.crop} key={user.id} user={user} setFavorite={() => selectUser(user.id)} />    
+				))}
+			</PersonList>
+		</>
     )
 }

@@ -2,12 +2,14 @@ import { Route, Routes } from 'react-router-dom';
 import { routesPath } from './routes';
 import styles from './SiteCard.module.css';
 import withRouterAndProviderApp from './HOC/withRouterProviderApp';
+import { Breadcrumbs, Footer, H2, Header } from './components';
 
 const SiteCard = () => {
 	return (
 		<div className={styles.appColumn}>
-			<div>Header</div>
+			<Header />
 			<div className={styles.page}>
+				<Breadcrumbs />
 				<Routes>
 					{routesPath.map((routes) => {
 						return (
@@ -20,7 +22,7 @@ const SiteCard = () => {
 					})}
 				</Routes>
 			</div>
-			<div>Footer</div>
+			<Footer />
 		</div>
 	);
 };
