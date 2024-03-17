@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://gedjerone.github.io/test/#",
+  "homepage": "https://argon143.github.io/JFD-hackathon-2-React/",
   "scripts": {
     "start": "webpack serve --mode development",
     "build": "webpack --mode production",

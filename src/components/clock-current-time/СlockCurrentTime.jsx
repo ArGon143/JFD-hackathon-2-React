@@ -1,13 +1,14 @@
 import { useState } from 'react';
+import styles from './СlockCurrentTime.module.css';
 
 const getTimeFrobDate = (date) => date.toTimeString().substring(0, 5);
 
 export const СlockCurrentTime = () => {
 	const [currentDate, setCurrentDate] = useState(new Date());
 
-	setTimeout(() => {
+	setInterval(() => {
 		setCurrentDate(new Date());
-	}, 1000);
+	}, 60000);
 
-	return <div>{getTimeFrobDate(currentDate)}</div>;
+	return <div className={styles.clockCurrentTime}>{getTimeFrobDate(currentDate)}</div>;
 };

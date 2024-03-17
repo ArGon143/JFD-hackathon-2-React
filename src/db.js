@@ -123,21 +123,21 @@ export const users = [
         "first_name": "Сергей",
         "second_name": "Комаров",
         "experience": 2,
-        "age": 23,
+        "age": 40,
         "image": IMG_URL.AVATAR_USER_004,
         "about": "Lorem ipsum dolor sit amet. Mauris convallis tellus urna.",
         "stack": [
             {
                 "name": "HTML",
-                "progress": 100
+                "progress": 90
             },
             {
                 "name": "CSS",
-                "progress": 40
+                "progress": 60
             },
             {
                 "name": "JavaScript",
-                "progress": 90
+                "progress": 80
             },
             {
                 "name": "React",
@@ -145,15 +145,15 @@ export const users = [
             },
             {
                 "name": "Redux",
-                "progress": 90
+                "progress": 70
             },
             {
                 "name": "Bootstrap",
-                "progress": 35
+                "progress": 30
             },
             {
                 "name": "TailwindCSS",
-                "progress": 50
+                "progress": 40
             }
         ],
     }
