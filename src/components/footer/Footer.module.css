@@ -1,0 +1,11 @@
+.footer {
+	width: 1000px;
+	height: 10vh;
+	padding-top: 20px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	bottom: 0;
+	font-style: italic;
+}

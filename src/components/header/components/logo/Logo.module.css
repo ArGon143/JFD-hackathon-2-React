@@ -1,17 +1,14 @@
 .logo {
 	display: flex;
-	margin-top: -21px;
+	/* margin-top: -21px; */
 	text-decoration: none;
+	text-align: center;
+	color: rgb(54, 40, 160);
 }
-.largeText {
-	font-size: 48px;
-	font-weight: 600;
-	line-height: 48px;
-	margin-top: 17px;
-	color: rgb(18, 4, 126);
-	/* -webkit-text-stroke: 1px #fff; */
-	/* -webkit-text-fill-color: transparent; */
-}
+
 .smallText {
-	font-size: 18px;
+	font-size: 13px;
+	font-variant: small-caps;
+	color: #000;
+	margin-top: -10px;
 }

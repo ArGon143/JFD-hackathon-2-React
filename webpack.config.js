@@ -3,11 +3,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
+	entry: {
+		main: path.join(__dirname, './src/index.js'),
+	},
 	output: {
 		path: path.join(__dirname, '/build'),
 		publicPath: '/',
 		filename: 'bundle.js',
 	},
+	target: ['web', 'es5'],
+	stats: { children: true },
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: './src/public/index.html',
@@ -20,6 +25,11 @@ module.exports = {
 	],
 	devServer: {
 		port: 3000,
+		hot: true,
+		static: {
+			directory: path.join(__dirname, './'),
+			serveIndex: true,
+		},
 	},
 	module: {
 		rules: [
@@ -31,8 +41,17 @@ module.exports = {
 				},
 			},
 			{
-				test: /\.(sa|sc|c)ss$/,
-				use: ['style-loader', 'css-loader', 'sass-loader'],
+				test: /\.css$/,
+				use: [
+					'style-loader',
+					{
+						loader: 'css-loader',
+						options: {
+							modules: true,
+							importLoaders: 1,
+						},
+					},
+				],
 			},
 			{
 				test: /\.(png|woff|woff2|eot|ttf|svg)$/,

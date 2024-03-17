@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import { routesPath } from './routes';
 import styles from './SiteCard.module.css';
 import withRouterAndProviderApp from './HOC/withRouterProviderApp';
-import { Header } from './components';
+import { Header, Footer } from './components';
 
 const SiteCard = () => {
 	return (
@@ -21,7 +21,7 @@ const SiteCard = () => {
 					})}
 				</Routes>
 			</div>
-			<div>Footer</div>
+			<Footer />
 		</div>
 	);
 };
