@@ -1,4 +1,4 @@
-import { useWindowEventListener } from './useWindowEventListener'
+import { useWindowEventListener } from "./useWindowEventListener"
 import { useState, useCallback, useEffect } from "react"
 
 /**
@@ -10,9 +10,9 @@ import { useState, useCallback, useEffect } from "react"
  * {@link https://github.com/gedjerone/react-js-use-local-storage.git Пример использования}
  */
 export function useLocalStorage(key, initialValue) {
-    // Сериализует строку в объект при чтении из стора и записывает в стор объект представленный в виде строки
+    // Сериализует строку в Array при чтении из стора и записывает в стор Array представленный в виде строки
     const serializer = {
-        read: v => JSON.parse(v),
+        read: v => v ? JSON.parse(v) : null,
         write: v => JSON.stringify(v)
     }
     // Кэшируем начальное значение, если оно задаётся функцией
