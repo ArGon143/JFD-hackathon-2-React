@@ -1,11 +1,12 @@
-import { OurWork } from './components/ourWork/ourWork';
+import { H2 } from '../../components';
+import { OurWork } from './components/ourWork/OurWork';
 import { works } from './ourWorkList';
 import styles from './ourWorks.module.css';
 
 export const OurWorks = () => {
 	return (
 		<div className={styles.container}>
-			<h2 className={styles.title}>Наши работы</h2>
+			<H2>Наши работы</H2>
 			<ul className={styles.ourWorks}>
 				{works.map((work, id) => {
 					return (

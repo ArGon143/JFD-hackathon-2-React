@@ -1,0 +1,13 @@
+.logo {
+	display: flex;
+	text-decoration: none;
+	text-align: center;
+	color: rgb(54, 40, 160);
+}
+
+.text {
+	font-size: 13px;
+	font-variant: small-caps;
+	color: #000;
+	margin-top: -10px;
+}

@@ -1,0 +1,5 @@
+.navbar {
+	display: flex;
+	flex-wrap: nowrap;
+	font-size: 18px;
+}

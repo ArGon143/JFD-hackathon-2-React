@@ -4,6 +4,9 @@ body {
 		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background: url(https://3.downloader.disk.yandex.ru/preview/f715e8797f1c611d04f454a661bd0b95ca3f5e7bf74c5223b0ac0697d85b4281/inf/_cWz8b52s_CYW5a8pF8K3NpBJRgfuVyLahSC5YlR9c8AoXrbWH_rpa0yIVCxJaLCtOk-BFbbr7k5-O9VHLUr8A%3D%3D?uid=537849441&filename=LightTheme1.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=537849441&tknv=v2&size=1896x896)
+		no-repeat center center fixed;
+	background-size: cover;
 }
 
 code {
@@ -11,10 +14,10 @@ code {
 }
 
 .mt-1 {
-	margin-top: .4rem !important;
+	margin-top: 0.4rem !important;
 }
 .mt-2 {
-	margin-top: .8rem !important;
+	margin-top: 0.8rem !important;
 }
 .mb-1 {
 	margin-bottom: 1rem !important;

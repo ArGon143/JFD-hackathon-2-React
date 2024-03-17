@@ -1,11 +1,20 @@
 import PropTypes from 'prop-types';
 import styles from './ourWork.module.css';
+import { H2, СustomImage } from '../../../../components';
 
 export const OurWork = ({ titleWork, img }) => {
 	return (
 		<div className={styles.work}>
-			<h1 className={styles.title}>{titleWork}</h1>
-			<img src={img} alt={titleWork} className={styles.image} />
+			<H2 fontSize="22px" margin="10px">
+				{titleWork}
+			</H2>
+			<СustomImage
+				className={styles.image}
+				src={img}
+				alt={titleWork}
+				width={350}
+				height={225}
+			/>
 		</div>
 	);
 };

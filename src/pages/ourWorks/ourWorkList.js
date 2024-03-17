@@ -1,18 +1,20 @@
+import { IMG_URL } from '../../constants';
+
 export const works = [
 	{
-		title: 'Создание приложения "Список дел"',
-		img: 'https://i.postimg.cc/Wzzj0pqs/todo-list.jpg',
+		title: 'Приложение "Список дел"',
+		img: IMG_URL.TODO,
 	},
 	{
-		title: 'Создание приложения "Калькулятор"',
-		img: 'https://i.postimg.cc/XJ700N89/calculator.jpg',
+		title: 'Приложение "Калькулятор"',
+		img: IMG_URL.CALC,
 	},
 	{
-		title: 'Создание игры "Крестики и нолики"',
-		img: 'https://i.postimg.cc/026PQQqf/game-X-O.jpg',
+		title: 'Игра "Крестики и нолики"',
+		img: IMG_URL.GAME_TIC_TAC_TOE,
 	},
 	{
-		title: 'Реализация приложения «Личный блог»',
-		img: 'https://i.postimg.cc/QCm9dMGs/blog.jpg',
+		title: 'Приложение «Личный блог»',
+		img: IMG_URL.PERSONAL_BLOG,
 	},
 ];
