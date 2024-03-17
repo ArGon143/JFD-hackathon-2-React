@@ -1,5 +1,4 @@
 export * from './person/Person';
-export * from './img/Img';
 export * from './loader/Loader';
 export * from './group/Group';
 export * from './button/Button';

@@ -21,11 +21,9 @@ export const Breadcrumbs = () => {
 
 				const isLast = index === pathnames.length - 1;
 
-				console.log(breadcrumbPath);
-
 				return isLast ? (
-					<span key={breadcrumbPath} style={{ fontWeight: 'bold' }}>
-						/ {name}
+					<span key={breadcrumbPath}>
+						/ <span style={{ fontWeight: 'bold' }}>{name}</span>
 					</span>
 				) : (
 					<span key={breadcrumbPath}>
@@ -36,17 +34,3 @@ export const Breadcrumbs = () => {
 		</div>
 	);
 };
-
-// export const Breadcrumbs = () => {
-//     const location = useLocation();
-
-// 	return (
-// 		<div>
-// 			{items.map(({ to, label }) => (
-// 				<Link key={to} to={to}>
-// 					{label}
-// 				</Link>
-// 			))}
-// 		</div>
-// 	);
-// };

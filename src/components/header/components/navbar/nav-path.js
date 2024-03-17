@@ -4,7 +4,7 @@ export const navPath = [
 		label: 'Главная',
 	},
 	{
-		path: '/users',
+		path: '/user',
 		label: 'Разработчики',
 	},
 	{

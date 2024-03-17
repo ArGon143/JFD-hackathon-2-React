@@ -8,11 +8,11 @@ export const Button = ({
 	onClick,
 	name,
 	type,
-	children
+	children,
 }) => {
 	const buttonStyle = {
 		backgroundColor: color,
-		borderRadius: type === 'rounded-corners' && '10%',
+		borderRadius: type === 'border-radius' && '0.5rem',
 		width,
 		height,
 	};
