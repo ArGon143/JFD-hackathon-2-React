@@ -9,3 +9,27 @@ body {
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+.mt-1 {
+	margin-top: .4rem !important;
+}
+.mt-2 {
+	margin-top: .8rem !important;
+}
+.mb-1 {
+	margin-bottom: 1rem !important;
+}
+.p-1 {
+	padding: 1rem !important;
+}
+.p-1to2 {
+	padding: 1rem 2rem !important;
+}
+.content-centered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.crop {
+	max-width: 320px;
+}
