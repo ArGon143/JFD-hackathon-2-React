@@ -6,7 +6,7 @@ export const Main = () => {
 	const [users, selectUser] = useSelectedUsers([], { onlyUnique: true });
 	return (
 		<div className={styles.main}>
-			<H2 fontSize="45px">
+			<H2>
 				Команда веб-разработчиков <span className={styles.yellow}>DreamTeam</span>
 			</H2>
 			<div>Слайдер</div>
