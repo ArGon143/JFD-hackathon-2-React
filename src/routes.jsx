@@ -1,4 +1,4 @@
-import { Favorites, Main } from "./pages";
+import { Favorites, Main, OurWorks, User } from "./pages";
 
 export const routesPath = [
 	{
@@ -6,15 +6,15 @@ export const routesPath = [
 		element: <Main />,
 	},
 	{
-		path: '/users',
-		element: <div>Users</div>,
-	},
-	{
 		path: '/user/:id',
-		element: <div>User</div>,
+		element: <User />,
 	},
 	{
 		path: '/favorites',
 		element: <Favorites />,
 	},
+	{
+		path: '/works',
+		element: <OurWorks />,
+	}
 ];

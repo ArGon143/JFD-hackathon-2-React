@@ -1,0 +1,8 @@
+.crop {
+    max-width: 800px;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

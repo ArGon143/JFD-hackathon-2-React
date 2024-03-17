@@ -18,6 +18,7 @@ module.exports = {
             template: "./src/public/index.html",
             robots: './src/public/robots.txt',
             favicon: './src/public/favicon.ico',
+            assets: './src/assets',
         }),
         new webpack.ProvidePlugin({
             process: "process/browser",
@@ -54,9 +55,9 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+                test: /\.(png|jpg|jpeg|svg)$/i,
                 loader: "url-loader",
-                options: { limit: false },
+                options: { limit: false, name: "assets/[contenthash].[ext]" },
             },
         ],
     },

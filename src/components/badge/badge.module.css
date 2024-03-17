@@ -1,19 +1,9 @@
 .badge {
-	color: white;
 	padding: 4px 8px;
 	text-align: center;
 	vertical-align: middle;
 	border-radius: 5px;
-}
-
-.red {
-	background-color: red;
-}
-
-.green {
-	background-color: green;
-}
-
-.blue {
-	background-color: blue;
+	background-color: var(--color);
+	font-size: var(--font-size);
+	font-weight: 500;
 }

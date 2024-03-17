@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 export const Group = ({ children, ...props }) => {
     return (
-        <div className={mergeStrings([props && Object.values(props), styles.group])}>
+        <div className={mergeStrings([...Object.values(props), styles.group])}>
             {children}
         </div>
     )

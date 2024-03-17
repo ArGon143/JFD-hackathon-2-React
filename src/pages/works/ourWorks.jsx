@@ -1,4 +1,4 @@
-import { OurWork } from './components/ourWork/ourWork';
+import { OurWork } from '../../components';
 import { works } from './ourWorkList';
 import styles from './ourWorks.module.css';
 
