@@ -17,7 +17,11 @@
 	font-size: 1rem;
 }
 .big {
-	font-weight: 700;
-	color: black;
-	font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    font-size: 1.5rem;
+}
+.justify-start {
+    justify-content: flex-start !important;
+    gap: 1rem;
 }

@@ -11,16 +11,11 @@ import { useEffect, useState } from "react";
  * @param {string[] | number[] | ((...args: any) => string[] | number[])} initialValue Начальное значение
  * @param {boolean} onlyUnique Если true, то хранит только уникальные значения
  * @param {Options} options Опции
- * @returns {[string[] | number[], React.Dispatch<string[] | number[]>]} [value, setValue] 
+ * @returns {[string[] | number[] | Object<R>, React.Dispatch<string[] | number[]>]} [value, setValue] 
  */
 export function useSelectedUsers(initialValue = [], options) {
     const init = initialValue instanceof Function ? initialValue() : initialValue
     const { onlyUnique = false, favorites = false, filter = null } = options
-    const filterFn = (a, b) => {
-        if (!filter) return true
-        if (filter && a === b) return true
-        return false
-    }
     const [selected, setSelected] = useLocalStorage('selected', init)
     const selectUser = (v) => {
         if (selected.includes(v) && onlyUnique) {
@@ -41,5 +36,22 @@ export function useSelectedUsers(initialValue = [], options) {
             })
         })
     }, [selected])
-    return [!favorites ? usersList.filter((user) => filterFn(user?.id, filter)) : usersList.filter((user) => selected.includes(user?.id)), selectUser]
+    const filterFavorites = (arr) => {
+        return arr.filter((item) => selected.includes(item?.id))
+    }
+    const filterFn = (a, b) => {
+        if (!filter) return true
+        if (filter && a === b) return true
+        return false
+    }
+    if (favorites) {
+        return [
+            filterFavorites(usersList),
+            selectUser
+        ]
+    }
+    return [
+        usersList.filter((user) => filterFn(user?.id, filter)),
+        selectUser
+    ]
 }

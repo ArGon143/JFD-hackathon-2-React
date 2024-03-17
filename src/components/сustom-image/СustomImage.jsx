@@ -1,33 +1,19 @@
 import PropTypes from 'prop-types';
-import styles from './Image.module.css';
 import React from 'react';
+import { mergeStrings } from '../../utils';
+import styles from './CustomImage.module.css';
+import common from '../../index.module.css'
 
-export const СustomImage = ({
-	src = '',
-	alt = '',
-	width = 100,
-	height = 100,
-	...props
-}) => {
-	if (!src) {
-		src = `https://via.placeholder.com/${width}x${height}`;
-	}
-
+export const CustomImage = ({...props}) => {
 	return (
 		<img
-			className={styles.img}
-			src={src}
-			alt={alt}
-			width={width}
-			height={height}
+			className={mergeStrings([styles.img, common.crop])}
+			src={props.src ? props.src : `https://via.placeholder.com/${props.width}x${props.height}`}
 			{...props}
 		/>
 	);
 };
 
-СustomImage.propTypes = {
-	src: PropTypes.node.isRequired,
-	alt: PropTypes.string,
-	width: PropTypes.number,
-	height: PropTypes.number,
+CustomImage.propTypes = {
+	props: PropTypes.objectOf(PropTypes.string),
 };

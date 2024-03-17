@@ -1,13 +1,9 @@
-.wrapper {
-}
-
 .progressDiv {
 	width: 200px;
 	height: 15px;
 	background-color: rgba(136, 136, 136, 0.2);
 	border-radius: 5px;
 }
-
 .progress {
 	display: flex;
 	align-items: center;
@@ -16,8 +12,30 @@
 	height: 15px;
 	border-radius: 5px;
 }
-
 .text {
 	font-size: 12px;
 	transform: translateY(-1px);
+}
+.circle-progress {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background: conic-gradient(var(--color) calc(var(--percent) * 3.6deg), #ededed 0deg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.circle-progress::before {
+	content: "";
+	position: absolute;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	background-color: #e6e6e6;
+}
+.progress-value {
+	font-size: 18px;
+	position: relative;
+	font-weight: 600;
+	color: #000;
 }

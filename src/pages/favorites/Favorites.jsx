@@ -1,23 +1,17 @@
-import { useSelectedUsers } from '../../hooks';
-import { H2, Person, PersonList } from '../../components';
+import { useSelectedUsers } from "../../hooks";
+import { Person, PersonList, H2 } from "../../components";
+import styles from './Favorites.module.css';
 
 export const Favorites = () => {
-	const [users, selectUser] = useSelectedUsers([], {
-		onlyUnique: true,
-		favorites: true,
-	});
+    const [users, selectUser] = useSelectedUsers([], { onlyUnique: true, favorites: true })
 	return (
 		<>
 			<H2>Список избранных специалистов</H2>
 			<PersonList>
 				{users.map((user) => (
-					<Person
-						key={user.id}
-						user={user}
-						setFavorite={() => selectUser(user.id)}
-					/>
+					<Person className={styles.crop} key={user.id} user={user} setFavorite={() => selectUser(user.id)} />    
 				))}
 			</PersonList>
 		</>
-	);
-};
+    )
+}
