@@ -12,7 +12,7 @@ export const Button = ({
 }) => {
 	const buttonStyle = {
 		backgroundColor: color,
-		borderRadius: type === 'rounded-corners' && '10%',
+		borderRadius: type === 'rounded-corners' && '0.5rem',
 		width,
 		height,
 	};
