@@ -1,5 +1,5 @@
 export const IMG_URL = {
-	LOGO_1: 'https://4.downloader.disk.yandex.ru/preview/0f2a4cc11d9730d45ac045a4cce4b5f02e8dd2cc1349c6e671c8432724d7e52c/inf/gc1mQlf_rfF0j8PePPfpcrJnUT21zG0dEssiH2iEUA9oOrEkL6ptEkPGY7S0zqjEtg8t3YQdTwHC82Lya57mvw%3D%3D?uid=537849441&filename=pngwing.com%20%2823%29.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=537849441&tknv=v2&size=1896x896',
+	LOGO_1: 'https://downloader.disk.yandex.ru/preview/3802f603e74a1fde30c04664e63b50bf3427dd21baa55990d9fae798d64c5b07/65f77aa4/gc1mQlf_rfF0j8PePPfpcrJnUT21zG0dEssiH2iEUA9oOrEkL6ptEkPGY7S0zqjEtg8t3YQdTwHC82Lya57mvw%3D%3D?uid=0&filename=pngwing.com%20%2823%29.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=1920x896',
 	LOGO_2: 'https://4.downloader.disk.yandex.ru/preview/529a98e39c6cdebe550be010c3e5f8be995fbbd15c83c5762094fa5f7af475ee/inf/tK6wpLETcy87jE37BtYLWBWRtG5GF_T5J-fxLnP9AX3QpOBgxs_GW0lZF08aHb2XGTqYncXH-DffS7UNccqdJA%3D%3D?uid=537849441&filename=pngwing.com%20%2825%29.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=537849441&tknv=v2&size=1896x896',
 	TODO: 'https://i.postimg.cc/Wzzj0pqs/todo-list.jpg',
 	CALC: 'https://i.postimg.cc/XJ700N89/calculator.jpg',
