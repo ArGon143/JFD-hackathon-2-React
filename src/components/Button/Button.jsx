@@ -1,13 +1,14 @@
 import styles from './ButtonStyles.module.css';
+import PropTypes from 'prop-types';
 
 export const Button = ({
 	color = '#ffff',
 	width = '150px',
 	height = '40px',
-	fn,
+	onClick,
 	name,
 	type,
-	text,
+	children
 }) => {
 	const buttonStyle = {
 		backgroundColor: color,
@@ -22,9 +23,19 @@ export const Button = ({
 			style={buttonStyle}
 			name={name}
 			type={type}
-			onClick={fn}
+			onClick={onClick}
 		>
-			{text ? text : 'Click'}
+			{children}
 		</button>
 	);
+};
+
+Button.propTypes = {
+	color: PropTypes.string,
+	width: PropTypes.string,
+	height: PropTypes.string,
+	onClick: PropTypes.func,
+	name: PropTypes.string,
+	type: PropTypes.string,
+	children: PropTypes.node,
 };

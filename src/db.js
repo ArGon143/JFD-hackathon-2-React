@@ -1,11 +1,14 @@
+import { IMG_URL } from './constants';
+
 export const users = [
 	{
 		id: '001',
-		first_name: 'Имя',
-		second_name: 'Фамилия',
+		first_name: 'Артём',
+		second_name: 'Гондалев',
 		experience: 2,
-		image: 'src/assets/img_name.jpg',
-		about: 'Lorem ipsum dolor sit amet. Mauris convallis tellus urna.',
+		age: 36,
+		image: IMG_URL.AVATAR_USER_001,
+		about: 'Два высших образования. Кандидат технических наук.',
 		stack: [
 			{
 				name: 'HTML',
@@ -13,7 +16,7 @@ export const users = [
 			},
 			{
 				name: 'CSS',
-				progress: 100,
+				progress: 60,
 			},
 			{
 				name: 'JavaScript',
@@ -36,14 +39,14 @@ export const users = [
 				progress: 50,
 			},
 		],
-		selected: false,
 	},
 	{
 		id: '002',
 		first_name: 'Максим',
 		second_name: 'Володин',
 		experience: 2,
-		image: 'src/assets/img_name.jpg',
+		age: 23,
+		image: IMG_URL.AVATAR_USER_002,
 		about: 'Lorem ipsum dolor sit amet. Mauris convallis tellus urna.',
 		stack: [
 			{
@@ -75,6 +78,83 @@ export const users = [
 				progress: 50,
 			},
 		],
-		selected: false,
+	},
+	{
+		id: '003',
+		first_name: 'Владимир',
+		second_name: 'Тарабан',
+		experience: 2,
+		age: 23,
+		image: IMG_URL.AVATAR_USER_003,
+		about: 'Lorem ipsum dolor sit amet. Mauris convallis tellus urna.',
+		stack: [
+			{
+				name: 'HTML',
+				progress: 100,
+			},
+			{
+				name: 'CSS',
+				progress: 40,
+			},
+			{
+				name: 'JavaScript',
+				progress: 90,
+			},
+			{
+				name: 'React',
+				progress: 80,
+			},
+			{
+				name: 'Redux',
+				progress: 90,
+			},
+			{
+				name: 'Bootstrap',
+				progress: 0,
+			},
+			{
+				name: 'Tailwind_CSS',
+				progress: 50,
+			},
+		],
+	},
+	{
+		id: '004',
+		first_name: 'Сергей',
+		second_name: 'Комаров',
+		experience: 2,
+		age: 23,
+		image: IMG_URL.AVATAR_USER_004,
+		about: 'Lorem ipsum dolor sit amet. Mauris convallis tellus urna.',
+		stack: [
+			{
+				name: 'HTML',
+				progress: 100,
+			},
+			{
+				name: 'CSS',
+				progress: 40,
+			},
+			{
+				name: 'JavaScript',
+				progress: 90,
+			},
+			{
+				name: 'React',
+				progress: 80,
+			},
+			{
+				name: 'Redux',
+				progress: 90,
+			},
+			{
+				name: 'Bootstrap',
+				progress: 0,
+			},
+			{
+				name: 'Tailwind_CSS',
+				progress: 50,
+			},
+		],
 	},
 ];

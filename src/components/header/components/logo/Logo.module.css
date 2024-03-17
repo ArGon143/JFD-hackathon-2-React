@@ -1,12 +1,11 @@
 .logo {
 	display: flex;
-	/* margin-top: -21px; */
 	text-decoration: none;
 	text-align: center;
 	color: rgb(54, 40, 160);
 }
 
-.smallText {
+.text {
 	font-size: 13px;
 	font-variant: small-caps;
 	color: #000;

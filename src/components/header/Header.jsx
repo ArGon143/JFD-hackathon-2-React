@@ -1,12 +1,11 @@
-// import { ControlPanel, Logo } from './components';
 import styles from './Header.module.css';
 import { СlockCurrentTime } from '../clock-current-time/СlockCurrentTime';
-import { Logo } from './components';
+import { Logo, Navbar } from './components';
 
 export const Header = () => (
 	<div className={styles.header}>
 		<Logo />
-		<div>Navbar</div>
+		<Navbar />
 		<СlockCurrentTime />
 	</div>
 );
