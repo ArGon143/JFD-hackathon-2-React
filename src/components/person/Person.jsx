@@ -13,7 +13,7 @@ export const Person = ({ user, setFavorite, showFullInfo = false, ...props }) =>
                 {showFullInfo && <Stack stack={user.stack} />}
             </Group>
             <p className={mergeStrings([styles.text, styles.small, common['mt-1']])}>ВОЗРАСТ: { user.age }</p>
-            <p className={mergeStrings([styles.text, styles.small, common['mt-1']])}>ОПЫТ: {user.experience} { user.experience < 2 ? 'ЛЕТ' : 'ГОДА' }</p>
+            <p className={mergeStrings([styles.text, styles.small, common['mt-1']])}>ОПЫТ РАЗРАБОТКИ: {user.experience} { user.experience < 2 ? 'ЛЕТ' : 'ГОДА' }</p>
             <h1 className={mergeStrings([styles.text, common['mt-1']])}>{ user.first_name } { user.second_name }</h1>
             <p className={mergeStrings([styles.text, styles.small, common['mt-1']])}>{ user.about }</p>
             <Group marginTop={common['mt-2']}>

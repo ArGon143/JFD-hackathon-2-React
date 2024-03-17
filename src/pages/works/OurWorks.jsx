@@ -1,6 +1,6 @@
 import { OurWork, H2 } from '../../components';
 import { works } from './ourWorkList';
-import styles from './ourWorks.module.css';
+import styles from './OurWorks.module.css';
 
 export const OurWorks = () => {
 	return (

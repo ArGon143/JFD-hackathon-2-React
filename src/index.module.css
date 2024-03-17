@@ -35,3 +35,6 @@ code {
 .crop {
 	max-width: 320px;
 }
+.image {
+	border-radius: 0.5rem;
+}

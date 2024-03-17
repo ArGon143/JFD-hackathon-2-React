@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import styles from './ourWork.module.css';
-import { H2, СustomImage } from '../../../../components';
+import { H2, CustomImage } from '../../components';
 
 export const OurWork = ({ titleWork, img }) => {
 	return (
@@ -8,7 +8,7 @@ export const OurWork = ({ titleWork, img }) => {
 			<H2 fontSize="22px" margin="10px">
 				{titleWork}
 			</H2>
-			<СustomImage
+			<CustomImage
 				className={styles.image}
 				src={img}
 				alt={titleWork}
